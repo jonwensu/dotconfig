@@ -1,6 +1,14 @@
 #!/usr/bin/bash
 
 # dotfiles
-alias dotconfig='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias dot="git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+alias dstatus="dot status" 
+alias dmod="dstatus | grep modified:"
+alias dpush="dot push"
+alias dadd="dot add"
 
 # git
+alias gfa="git fetch --all"
+alias gm="git merge"
+alias gp="git push"
+alias gpl="git pull"
