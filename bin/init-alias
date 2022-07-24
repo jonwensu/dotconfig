@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+# dotfiles
+alias dotconfig='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+# git
