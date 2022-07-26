@@ -1,4 +1,8 @@
 #!/usr/bin/bash
+alias ls="lsd -la"
+alias cat="bat --theme=Nord"
+alias vim="lvim"
+alias vimg="lvim-gui"
 
 # dotfiles
 alias dot="git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
@@ -12,3 +16,8 @@ alias gfa="git fetch --all"
 alias gm="git merge"
 alias gp="git push"
 alias gpl="git pull"
+
+# kubernetes
+alias kgp="kubectl get po"
+alias klogs="kubectl logs -f"
+alias kns="kubens"
