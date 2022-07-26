@@ -1,0 +1,32 @@
+[Default Applications]
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/jetbrains-gateway=jetbrains-gateway.desktop
+application/xhtml+xml=google-chrome.desktop
+text/html=google-chrome.desktop
+application/x-xpinstall=google-chrome.desktop
+application/geo+json=google-chrome.desktop
+application/jrd+json=google-chrome.desktop
+application/json=google-chrome.desktop
+application/x-mswinurl=google-chrome.desktop
+application/vnd.ms-htmlhelp=google-chrome.desktop
+application/x-khtml-adaptor=google-chrome.desktop
+text/htmlh=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=xfce4-web-browser.desktop
+x-scheme-handler/http=xfce4-web-browser.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
+x-scheme-handler/msteams=teams.desktop
+
+[Added Associations]
+text/plain=visual-studio-code.desktop;xed.desktop;
+application/vnd.ms-publisher=xed.desktop;
+x-scheme-handler/http=xfce4-web-browser.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;
+application/x-mswinurl=google-chrome.desktop;
+application/vnd.ms-htmlhelp=google-chrome.desktop;
+application/x-khtml-adaptor=google-chrome.desktop;
+text/htmlh=google-chrome.desktop;
+image/gif=gimp.desktop;google-chrome.desktop;
+application/pdf=com.github.xournalpp.xournalpp.desktop;google-chrome.desktop;
+text/csv=onlyoffice-desktopeditors.desktop;visual-studio-code.desktop;
