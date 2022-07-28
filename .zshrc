@@ -141,3 +141,6 @@ export PATH=$PATH:/home/wencel/bin
 
 export BROWSER='/usr/bin/google-chrome-stable'
 source '/home/wencel/lib/azure-cli/az.completion'
+
+bindkey -v
+

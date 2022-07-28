@@ -5,7 +5,7 @@ alias vim="lvim"
 alias vimg="lvim-gui"
 
 # dotfiles
-alias dot="git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias dstatus="dot status" 
 alias dmod="dstatus | grep modified:"
 alias dpush="dot push"
