@@ -21,3 +21,6 @@ alias gpl="git pull"
 alias kgp="kubectl get po"
 alias klogs="kubectl logs -f"
 alias kns="kubens"
+
+# tmux
+alias tmux="TERM=screen-256color-bce tmux"

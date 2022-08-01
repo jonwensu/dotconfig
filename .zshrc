@@ -143,3 +143,6 @@ source "$HOME/lib/azure-cli/az.completion"
 
 bindkey -v
 
+export TERMINAL=alacritty
+export TERM=screen-256color
+
