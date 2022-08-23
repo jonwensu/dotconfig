@@ -30,3 +30,6 @@ text/htmlh=google-chrome.desktop;
 image/gif=gimp.desktop;google-chrome.desktop;
 application/pdf=com.github.xournalpp.xournalpp.desktop;google-chrome.desktop;
 text/csv=onlyoffice-desktopeditors.desktop;visual-studio-code.desktop;
+inode/directory=code_code.desktop;
+application/javascript=code_code.desktop;
+application/octet-stream=gvim.desktop;
