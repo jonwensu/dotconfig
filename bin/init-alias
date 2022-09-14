@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 alias ls="lsd -la"
 alias cat="bat --theme=Nord"
-alias vim="nvim"
+# alias vim="nvim"
+alias vim="lvim"
 
 # dotfiles
 alias dot="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"

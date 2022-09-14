@@ -80,8 +80,10 @@ lvim.builtin.alpha.dashboard.section.header.val = {
 
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
+lvim.builtin.terminal.direction = 'horizontal'
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.nvimtree.setup.filters.dotfiles = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
@@ -179,7 +181,7 @@ formatters.setup {
 
 -- Additional Plugins
 lvim.plugins = {
-  { 'arcticicestudio/nord-vim' },
+  { 'shaunsingh/nord.nvim' },
   { 'windwp/nvim-ts-autotag' },
   {
     "aca/emmet-ls",
@@ -222,8 +224,46 @@ lvim.plugins = {
       lspconfig.emmet_ls.setup({ capabilities = capabilities })
     end,
   },
-  { 'tpope/vim-surround' }
+  { 'tpope/vim-surround' },
+  {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require("colorizer").setup()
+    end,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "BufRead",
+    config = function()
+      local opts = {
+        char = "▏",
+        filetype_exclude = {
+          "alpha",
+          "help",
+          "terminal",
+          "dashboard",
+          "lspinfo",
+          "lsp-installer",
+          "mason",
+        },
+        buftype_exclude = { "terminal" },
+        bufname_exclude = { "config.lua" },
 
+        show_trailing_blankline_indent = false,
+        show_first_indent_level = false,
+        show_current_context = true,
+        show_current_context_start = true,
+        -- use_treesitter = false,
+      }
+
+      require("indent_blankline").setup(opts)
+    end
+  },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "BufRead",
+    config = function() require "lsp_signature".on_attach() end,
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
