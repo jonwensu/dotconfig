@@ -149,3 +149,6 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export EDITOR='lvim'
 export VISUAL='lvim'
+export MAVEN_HOME=/usr/bin/mvn
+
+eval "$(direnv hook zsh)"
