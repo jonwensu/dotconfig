@@ -7,6 +7,9 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
+      autotag = {
+        enable = true,
+      },
       ensure_installed = {
         "bash",
         "help",
