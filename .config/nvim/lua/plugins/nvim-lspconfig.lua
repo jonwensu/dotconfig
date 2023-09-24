@@ -2,6 +2,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = { "jose-elias-alvarez/typescript.nvim" },
+    keys = { { "<leader>cR", "<cmd>LspRestart<cr>", desc = "Restart LSP" } },
     opts = {
       -- make sure mason installs the server
       servers = {
